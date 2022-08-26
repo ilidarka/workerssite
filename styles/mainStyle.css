@@ -1,0 +1,152 @@
+:root {
+    --main-blue: #0051FF;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+.buttons {
+    background-color: var(--main-blue);
+    border: none;
+    width: 170px;
+    height: 50px;
+    border-radius: 50px;
+    color: #fff;
+} 
+.buttons:hover {
+    color: #000;
+}
+.selected {
+    color: var(--main-blue) !important;
+}
+h1 {
+    font-size: 24px;
+    color: var(--main-blue);
+}
+h2 {
+    font-size: 40px;
+    color: #fff;
+}
+h3 {
+    font-size: 20px;
+    color: #000;
+}
+header {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.mainWrapper {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+header .headerLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .headerNavBar {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .headerNavBar li {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+}
+header .headerNavBar li a {
+    color: #000;
+    text-decoration: none;
+}
+header .headerNavBar li a:checked {
+    color: #000;
+}
+header .headerContacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+header  .headerContacts-number span {
+    font-size: 20px;
+}
+.mainSection {
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    justify-content: center;
+    background-image: url("https://www.profguide.io/images/article/a/11/FCtWXfwcoI.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mainSection .mainSection-content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.mainSection-content h2 {
+    margin-top: 130px;
+}
+.mainSection-content h3 {
+    font-size: 25px;
+    margin-top: 30px;
+    color: #fff;
+}
+.mainSection-content .mainSectionButtons {
+    margin-top: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.mainSection-content .mainSectionButtons button:nth-child(2) {
+    background-color: #fff;
+    color: #000;
+}
+.benefitsSection {
+    width: 100%;
+    height: 300px;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+}
+.benefitsList {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.benefitsList .benefitList-item {
+    width: 300px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 2px solid var(--main-blue);
+    padding: 0 25px;
+}
+.benefitsList .benefitList-item:last-child {
+    border-right: none;
+}
+.benefitsList .benefitList-item .benefitNumber {
+    text-align: center;
+    color: var(--main-blue);
+}
+.benefitsList .benefitList-item .benefitName {
+    text-align: center;
+    font-weight: 800;
+    font-size: 24px;
+    padding-top: 20px;
+}
+.benefitsList .benefitList-item .benefitDescription {
+    text-align: center;
+}
