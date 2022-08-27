@@ -295,3 +295,110 @@ header  .headerContacts-number span {
 .requestFormContainer .buttons {
     width: 250px;
 }
+.workWithUsSection {
+    margin-top: 100px;
+}
+.workWithUsSection .mainWrapper {
+    flex-direction: column;
+    align-items: center;
+}
+.workWithUsContent {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 40px;
+}
+.workWithUsContent .leftContainer, .workWithUsContent .rightContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.leftContainer .leftContainer-item, .rightContainer .rightContainer-item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.leftContainer .leftContainer-item img, .rightContainer .rightContainer-item img {
+    width: 20%;
+}
+.leftContainer-item .description {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+.rightContainer-item .description {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.leftContainer-item .description .name {
+    font-size: 22px;
+    font-weight: 700;
+    text-align: end;
+    margin-bottom: 10px;
+}
+.rightContainer-item .description .name {
+    font-size: 22px;
+    font-weight: 700;
+    text-align: start;
+    margin-bottom: 10px;
+}
+.leftContainer-item .description .desc {
+    text-align: end;
+}
+.rightContainer-item .description .desc {
+    text-align: start;
+}
+.fastCallSection {
+    margin-top: 100px;
+    min-height: 785px;
+    background: url("https://www.admnvrsk.ru/upload/resize_cache/iblock/8ae/865_497_2/8ae5d5e572bf67f18c7264fdad19bbc0.jpeg");
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.40);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.fastCallSection .mainWrapper {
+    justify-content: center;
+}
+.fastCallSection .fastCallContent {
+    margin: auto auto;
+    padding: 70px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+.fastCallContent span {
+    text-align: center;
+    font-size: 20px;
+}
+.fastCallContent .info {
+    margin-top: 50px;
+}
+.fastCallContent .leaveContacts {
+    margin-top: 50px;
+}
+.fastCallContent .link {
+    margin-top: 50px;
+}
+.fastCallContent .link a {
+    color: #ff8562;
+}
+.fastCallContent input {
+    border: none;
+    color: #b0b0b0;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #b0b0b0;
+    margin: 0 30px;
+    width: 300px;
+}
+.fastCallContent .buttons {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
