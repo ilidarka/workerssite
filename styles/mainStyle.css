@@ -128,14 +128,17 @@ header  .headerContacts-number span {
     height: 300px;
     background-color: #f2f2f2;
 }
+.benefitsSection .mainWrapper {
+    justify-content: center;
+}
 .benefitsList {
-    width: 100%;
+    width: 85%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .benefitsList .benefitList-item {
-    width: 300px;
+    width: 35%;
     height: 250px;
     display: flex;
     flex-direction: column;
@@ -309,8 +312,8 @@ header  .headerContacts-number span {
     margin-top: 50px;
     gap: 40px;
 }
-.workWithUsContent .leftContainer, .workWithUsContent .rightContainer {
-    width: 100%;
+.workWithUsContent .leftContainer, .workWithUsContent .rightContainer, .workWithUsContent .middleContainer{
+    width: 33%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -456,6 +459,110 @@ header  .headerContacts-number span {
 .cooperationSection .bottom .bottom-item .itemDescription {
     font-size: 25px;
     margin-top: 30px;
+}
+.contactsSection {
+    margin-top:200px;
+}
+.contactsSection .mainWrapper {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contactsSection h3 {
+    text-align: center;
+    margin-bottom: 60px;
+}
+.contactsContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.contactsContainer .leftContainer {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.contactsContainer .rightContainer {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.contactsContainer span, .contactsContainer a, .contactsContainer p, .contactsContainer input, .contactsContainer textarea{
+    font-size: 24px;
+    color: #000;
+}
+.contactsContainer .leftContainer .mail, .contactsContainer .leftContainer .phone, .contactsContainer .rightContainer .contactsHeader {
+    font-weight: 700;
+}
+.contactsContainer .leftContainer .socials {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+}
+.contactsContainer .rightContainer input, .contactsContainer .rightContainer textarea {
+    border: 1px solid #b0b0b0;
+    color: #b0b0b0;
+    padding: 20px 0 20px 20px;
+}
+.contactsContainer .rightContainer .buttons {
+    width: 400px;
+    height: 60px;
+}
+.gallerySection {
+    margin-top: 90px;
+    flex-wrap: wrap;
+}
+.gallerySection img {
+    width: 25%;
+}
+.blogSection {
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+.blogSection .mainWrapper {
+    flex-direction: column;
+    align-items: center;
+}
+.blogSection .blogItems {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+.blogSection .blogItems-item {
+    margin-top: 30px;
+    width: 360px;
+}
+.blogSection a {
+    color: #000;
+    text-decoration: none;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.blogSection a img {
+    width: 350px;
+    height: 300px;
+}
+.blogSection .blogItems-item .blogItemName {
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+    height: 68px;
+    font-weight: 700;
+    font-size: 30px;
+}
+.blogSection .blogItems-item .blogItemDesc {
+    margin-top: 10px;
+    line-height: 1.8;
+    height: 140px;
+}
+.blogSection .blogItems-item .blogItemDate {
+    color: #b0b0b0;
+    margin-top: 20px;
 }
 footer {
     min-height: 327px;
