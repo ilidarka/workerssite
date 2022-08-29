@@ -1,13 +1,37 @@
 @media (max-width: 1150px) {
     header .headerContacts {
         flex-direction: column;
-
     }
     .workWithUsSection .middleContainer img {
         width: 100%;
     }
+    .fastCallContent {
+        margin-left: 30px !important;
+        margin-right: 30px !important;
+    }
+    .fastCallContent .leaveContacts {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .fastCallContent .leaveContacts input {
+        width: 100%;
+    }
+}
+@media (max-width: 1150px) {
+    footer ul {
+        margin-top: 10px;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
 }
 @media (max-width: 960px) {
+    h3 {
+        font-size: 1.5em !important;
+    }
     .mainSection .mainSection-content {
         margin-left: 40px;
     }
@@ -23,6 +47,9 @@
     }
     .workWithUsContent .leftContainer .leftContainer-item {
         flex-direction: row-reverse;
+    }
+    .workWithUsContent .description {
+
     }
     .workWithUsContent .leftContainer .leftContainer-item .description span {
         margin-left: 30px;
@@ -47,5 +74,116 @@
         flex-direction: column;
         align-items: center;
         background: unset;
+    }
+    .benefitsSection {
+        height: unset;
+    }
+    .benefitsSection .benefitsList {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .benefitsSection .benefitList-item {
+        width: 70%;
+        border: none;
+        border-bottom: 2px solid var(--main-blue);
+        margin-bottom: 30px;
+    }
+    .benefitsSection .benefitList-item:last-child {
+        border: none;
+    }
+}
+@media (max-width: 910px) {
+    #menu {
+        display: block !important;
+        z-index: 5 !important;
+    }
+    .headerNavBar {
+        display: none !important;
+    }
+    .headerLogo img {
+        margin-left: 60px;
+    }
+    .contactsSection .contactsContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contactsSection .contactsContainer .leftContainer, .contactsSection .contactsContainer .rightContainer {
+        width: 80%;
+    }
+}
+@media (max-width: 797px) {
+    .mainSection .mainWrapper {
+        justify-content: center;
+    }
+    .mainSection .mainSection-content {
+        width: 80%;
+        margin-left: 0;
+    }
+    .mainSection h2, .mainSection h3 {
+        text-align: center;
+    }
+    .mainSection .mainSectionButtons {
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 30px;
+        align-items: center;
+    }
+}
+@media (max-width: 760px) {
+    .callTeam .teamDescriptions {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .callTeam .teamDescriptions .teamPrice {
+        text-align: start;
+    }
+}
+@media (max-width: 586px) {
+    header {
+        height: 145px;
+        padding-bottom: 10px;
+    }
+    header .mainWrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    header .headerLogo img {
+        margin-left: 0;
+    }
+    .contactsSection .contactsContainer .buttons {
+        width: 80%;
+    }
+    .requestForm .requestFormContainer {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+    }
+    .requestForm .requestFormContainer span {
+        text-align: center;
+    }
+}
+@media (max-width: 490px) {
+    .workWithUsSection .leftContainer, .workWithUsSection .rightContainer {
+        width: 90%;
+    }
+    .workWithUsSection h3 {
+        text-align: center;
+    }
+}
+@media (max-width: 360px) {
+    .contactsSection .socials {
+        flex-direction: column;
+    }
+    .blogSection h3 {
+        text-align: center;
+    }
+    .blogSection a img {
+        width: 100%;
+    }
+    .workWithUsSection .rightContainer-item .description {
+        margin-left: 10px !important;
+    }
+    .blogSection .blogItemDesc, .blogSection .blogItemDate {
+        padding-left: 10px;
     }
 }
