@@ -16,6 +16,10 @@
     border-radius: 50px;
     color: #fff;
 } 
+.buttons a {
+    color: #fff;
+    text-decoration: none;
+}
 .buttons:hover {
     color: #000;
 }
@@ -122,8 +126,10 @@ header  .headerContacts-number span {
     display: flex;
     justify-content: space-around;
 }
-.mainSection-content .mainSectionButtons button:nth-child(2) {
+.mainSection-content .mainSectionButtons .buttons:nth-child(2) {
     background-color: #fff;
+}
+.mainSection-content .mainSectionButtons .buttons:nth-child(2) a {
     color: #000;
 }
 .benefitsSection {

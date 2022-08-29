@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/mainStyle.css">
-    <link rel="stylesheet" href="./styles/meadia.css">
+    <link rel="stylesheet" href="./styles/media.css">
     <link rel="stylesheet" href="./styles/burgermenustyle.css">
+    <link rel="stylesheet" href="./styles/modalWindowStyle.css">
     <script src="./scripts/script.js" defer></script>
     <title>Document</title>
 </head>
@@ -46,7 +47,7 @@
                     <span>+7 (925) 100-03-08</span>
                 </div>
                 <div class="headerContacts-button">
-                    <button class="buttons">Оставить заявку</button>
+                    <button class="buttons" id="firstModalButton">Оставить заявку</button>
                 </div>
             </div>
         </div>
@@ -60,8 +61,8 @@
                         Наличный / безналичный расчёт + закрывающие документы еженедельно.
                     </h3>
                     <div class="mainSectionButtons">
-                        <button class="buttons">Вызвать бригаду</button>
-                        <button class="buttons">Ищу работу</button>
+                        <button class="buttons"><a href="#fastCallSectionId">Вызвать бригаду</a></button>
+                        <button class="buttons"><a href="questionary.html">Ищу работу</a></button>
                     </div>
                 </div>
             </div>
@@ -160,7 +161,7 @@
                         </div>
                     </div>
                 </div>
-                <button class="buttons">Заказать бригаду</button>
+                <button class="buttons" id="secondModalButton">Заказать бригаду</button>
             </div>
         </section>
         <section class="callTeam">
@@ -227,7 +228,7 @@
                     <span>
                         Оставьте заявку сейчас и получите персональную выгоду для себя
                     </span>
-                    <button class="buttons">Узнать о выгоде</button>
+                    <button class="buttons" id="thirdModalButton">Узнать о выгоде</button>
                 </div>
             </div>
         </section>
@@ -301,7 +302,7 @@
                 </div>
             </div>
         </section>
-        <section class="fastCallSection">
+        <section id="fastCallSectionId" class="fastCallSection">
             <div class="mainWrapper">
                 <div class="fastCallContent">
                     <h3>Закажите быстрый звонок</h3>
@@ -572,5 +573,15 @@
             </div>
         </div>
     </footer>
+    <div id="modalWindow" class="modal">
+        <div class="modal-content">
+            <span class="closeButton">&times;</span>
+            <div class="modal-items">
+                <p>Введите ваш номер</p>
+                <input type="text">
+                <button class="approveButton buttons">Заказать</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

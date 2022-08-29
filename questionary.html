@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/questionarystyle.css">
+    <link rel="stylesheet" href="./styles/checkboxstyle.css">
+    <title>Вакансия разнорабочего</title>
+</head>
+<body>
+    <header>
+        <div class="mainWrapper">
+            <h1>Анкета разнорабочего</h1>
+            <h2>Если анкета нас устроит - отдел рекрутинга свяжется с вами в течении дня</h2>
+        </div>
+    </header>
+    <main>
+        <div class="ancketa">
+            <div class="mainWrapper">
+                <span class="fio">ФИО</span>
+                <input type="text" class="fioInput" value="Иван Иванов">
+                <span class="mail">Ваша почта</span>
+                <input type="text" class="mailInput" value="example@site.com">
+                <span class="phone">Ваш телефон</span>
+                <input type="text" class="phoneInput" value="+1 123 456 7890">
+                <span class="age">Сколько вам лет?</span>
+                <input type="text" class="ageInput">
+                <span class="sallary">Какая зарплата вас устроит?</span>
+                <textarea name="sallarytext" id="" cols="65" rows="5" class="sallaryTextArea"></textarea>
+                <span class="experience">Ваш опыт работы</span>
+                <textarea name="experiencetext" id="" cols="65" rows="5" class="experienceTextArea"></textarea>
+                <label class="control control-checkbox">
+                    Согласие на обработку персональных данных
+                        <input type="checkbox" checked="checked" />
+                    <div class="control_indicator"></div>
+                </label>
+                <button>Отправить анкету</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>

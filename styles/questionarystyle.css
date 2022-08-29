@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 24px;
+}
+header {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    background-image: url("https://thumb.tildacdn.com/tild3930-6265-4231-a333-633736646264/-/format/webp/__2012_3_20121219_20.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.5);
+}
+.mainWrapper {
+    max-width: 1120px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 80px;
+}
+h1 {
+    color: #fff;
+    font-size: 75px;
+    text-align: center;
+}
+h2 {
+    margin-top: 70px;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 400;
+}
+.ancketa {
+    width: 100%;
+    display: flex;
+    justify-content: center;    
+}
+.ancketa .mainWrapper {
+    width: 60%;
+    align-items: flex-start;
+}
+span, input {
+    width: 100%;
+}
+input {
+    height: 60px;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: #8c8c8c;
+}
+textarea {
+    width: 100%;
+}
+button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    height: 50px;
+    width: 250px;
+    font-size: 18px;
+    margin: 0 auto;
+}
+footer {
+    min-height: 100px;
+    width: 100%;
+    background-color: #000;
+    margin-top: 50px;
+}
+@media (max-width: 1000px) {
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1em;
+    }
+}
