@@ -25,6 +25,8 @@ var modal = document.getElementById("modalWindow");
 var firstBtn = document.getElementById("firstModalButton");
 var secondBtn = document.getElementById("secondModalButton");
 var thirdBtn = document.getElementById("thirdModalButton");
+var workInfo = document.getElementsByClassName("workInfo");
+console.log(workInfo);
 var span = document.getElementsByClassName("closeButton")[0];
 
 firstBtn.onclick = function() {
@@ -36,6 +38,11 @@ secondBtn.onclick = function() {
 };
 
 thirdBtn.onclick = function() {
+    modal.style.display = "block";
+};
+
+workInfo.onclick = function() {
+    console.log("zxc");
     modal.style.display = "block";
 };
 

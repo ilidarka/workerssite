@@ -22,7 +22,7 @@
           <ul>
             <li><a href="#">Главная</a></li>
             <li><a href="#">О нас</a></li>
-            <li><a href="#">Услуги</a></li>
+            <li><a href="#servicesSectionId">Услуги</a></li>
             <li><a href="#">Вакансии</a></li>
             <li><a href="#">Контакты</a></li>
           </ul>
@@ -38,7 +38,7 @@
             <nav class="headerNavBar">
                 <li><a href="#" class="selected">Главная</a></li>
                 <li><a href="#">О нас</a></li>
-                <li><a href="#">Услуги</a></li>
+                <li><a href="#servicesSectionId">Услуги</a></li>
                 <li><a href="#">Вакансии</a></li>
                 <li><a href="#">Контакты</a></li>
             </nav>
@@ -93,12 +93,12 @@
                 </div>
             </div>
         </section>
-        <section class="servicesSection">
+        <section id="servicesSectionId" class="servicesSection">
             <div class="mainWrapper">
                 <h3>Услуги разнорабочих которые мы предлагаем:</h3>
                 <div class="servicesList">
                     <div class="servicesList-item">
-                        <img src="https://laboratoria.by/wp-content/uploads/2019/04/Dor-rabST-300x188.jpg" alt="roadWorker">
+                        <img class="serviceImage" src="https://laboratoria.by/wp-content/uploads/2019/04/Dor-rabST-300x188.jpg" alt="roadWorker">
                         <div class="workInfo">
                             <span class="workType">Дорожные работы</span>
                             <span class="workPrice">От 225 рублей за человека в час</span>
@@ -312,7 +312,7 @@
                         <input type="text" class="phone" value="+7 (999) 999-99-99">
                         <button class="buttons">Отправить</button>
                     </div>
-                    <span class="link">Если вы ищете работу разнорабочего <a href="#">переходите по ссылке</a></span>
+                    <span class="link">Если вы ищете работу разнорабочего <a href="questionary.html">переходите по ссылке</a></span>
                 </div>
             </div>
         </section>
@@ -569,16 +569,19 @@
             </div>
             <div class="orgInfo">
                 <span class="orgName">ООО «Стройперсонал» ОГРН 1191326003110, ИНН 1327034497</span>
-                <span class="politics"><a href="#">политика конфиденциальности</a></span>
+                <span class="politics"><a href="policy.html">политика конфиденциальности</a></span>
             </div>
         </div>
     </footer>
     <div id="modalWindow" class="modal">
+        <span class="closeButton">&times;</span>
         <div class="modal-content">
-            <span class="closeButton">&times;</span>
             <div class="modal-items">
-                <p>Введите ваш номер</p>
-                <input type="text">
+                <img src="./img/modalWindowImage.webp" alt="modalWindowImage">
+                <span class="modalHeader">Это здорово что вы определились с услугой!</span>
+                <span class="modalText">Вам осталось оставить свои конаткты и наш менеджер свяжется с вами</span>
+                <input type="text" value="Ваше имя" class="inputModalName">
+                <input type="text" value="+7 (999) 999-99-99" class="inputModalPhone">
                 <button class="approveButton buttons">Заказать</button>
             </div>
         </div>
