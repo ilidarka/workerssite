@@ -71,6 +71,7 @@ header .headerNavBar {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 20px;
 }
 header .headerNavBar li {
     width: 100%;
@@ -96,9 +97,10 @@ header  .headerContacts-number span {
 }
 .mainSection {
     min-height: 600px;
-    background-image: url("https://www.profguide.io/images/article/a/11/FCtWXfwcoI.jpg");
+    background: url("https://www.profguide.io/images/article/a/11/FCtWXfwcoI.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.5);
 }
 .mainSection .mainSection-content {
     width: 50%;
@@ -132,7 +134,7 @@ header  .headerContacts-number span {
     justify-content: center;
 }
 .benefitsList {
-    width: 85%;
+    width: 86%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -154,17 +156,15 @@ header  .headerContacts-number span {
     color: var(--main-blue);
 }
 .benefitsList .benefitList-item .benefitName {
+    height: 139px;
     text-align: center;
     font-weight: 800;
     font-size: 24px;
     padding-top: 40px;
 }
 .benefitsList .benefitList-item .benefitDescription {
-    padding-top: 50px;
+    padding-top: 25px;
     text-align: center;
-}
-.benefitsList .benefitList-item:nth-child(3) .benefitDescription {
-    padding-top: 10px;
 }
 .servicesSection {
     margin-top: 80px;
@@ -407,6 +407,7 @@ header  .headerContacts-number span {
 }
 .cooperationSection {
     margin-top: 20px;
+    background: linear-gradient(#f2f2f2 50%, #fff 50%);
 }
 .cooperationSection .mainWrapper {
     flex-direction: column;
