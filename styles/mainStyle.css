@@ -191,7 +191,7 @@ header  .headerContacts-number span {
     width: 380px;
     height: 300px;
     position: relative;
-    background-size: cover;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -209,8 +209,6 @@ header  .headerContacts-number span {
 }
 .servicesList .servicesList-item .workInfo {
     background-color: rgba(0, 0, 0, 0.40);
-    width: 100%;
-    height: 100%;
     z-index: 2;
     color: #fff;
     display: flex;

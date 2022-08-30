@@ -1,0 +1,79 @@
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header {
+    min-height: 60px;
+    width: 100%;
+    border-bottom: 1px solid #8c8c8c;
+    display: flex;
+    z-index: 3;
+    background-color: #fff;
+}
+.stickyHeader {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.stickyHeader + .mainContent {
+    padding-top: 50px;
+}
+header img {
+    margin-top: 10px;
+    transform: rotate(180deg);
+}
+h1 {
+    margin: 0 auto;
+    margin-top: 23px;
+    font-size: 14px;
+    text-align: center;
+}
+.mainContent {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.mainContent img {
+    width: 100%;
+}
+p {
+    font-size: 22px;
+}
+.title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 26px;
+}
+.bold {
+    font-weight: 700;
+    font-size: 24px;
+}
+.date {
+    font-size: 14px;
+    color: #8c8c8c;
+    text-align: start;
+}
+.mail a {
+    color: #ff8562;
+}
+ul, ol {
+    font-size: 22px;
+}
+footer {
+    margin-top: 20px;
+    min-height: 50px;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+}
