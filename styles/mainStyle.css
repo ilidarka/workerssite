@@ -133,7 +133,7 @@ header  .headerContacts-number span {
     color: #000;
 }
 .benefitsSection {
-    height: 300px;
+    height: 230px;
     background-color: #f2f2f2;
 }
 .benefitsSection .mainWrapper {
@@ -147,7 +147,7 @@ header  .headerContacts-number span {
 }
 .benefitsList .benefitList-item {
     width: 35%;
-    height: 250px;
+    height: 165px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -157,19 +157,14 @@ header  .headerContacts-number span {
 .benefitsList .benefitList-item:last-child {
     border-right: none;
 }
-.benefitsList .benefitList-item .benefitNumber {
-    text-align: center;
-    color: var(--main-blue);
-}
 .benefitsList .benefitList-item .benefitName {
-    height: 139px;
+    height: 100px;
     text-align: center;
     font-weight: 800;
     font-size: 24px;
-    padding-top: 40px;
 }
 .benefitsList .benefitList-item .benefitDescription {
-    padding-top: 25px;
+    padding-top: 10px;
     text-align: center;
 }
 .servicesSection {
@@ -418,7 +413,6 @@ header  .headerContacts-number span {
     border: 1px solid #000;
 }
 .cooperationSection {
-    margin-top: 20px;
     background: linear-gradient(#f2f2f2 50%, #fff 50%);
 }
 .cooperationSection .mainWrapper {
@@ -436,13 +430,13 @@ header  .headerContacts-number span {
     align-items: center;
 }
 .cooperationSection .top h3 {
-    font-size: 55px;
+    font-size: 50px;
 }
 .cooperationSection .bottom {
     background: url("/img/backgroundLine.png") no-repeat;
     background-size: 77% 1px;
     background-position-x: 10%;
-    background-position-y: 11%;
+    background-position-y: 18%;
     display: flex;
     justify-content: space-between;
 }
@@ -464,14 +458,17 @@ header  .headerContacts-number span {
     padding: 6px 0;
 }
 .cooperationSection .bottom .bottom-item .itemName {
-    margin-top: 30px;
+    margin-top: 10px;
     font-weight: 700;
-    font-size: 30px;
-    height: 103px;
+    font-size: 23px;
+    height: 40px;
 }
 .cooperationSection .bottom .bottom-item .itemDescription {
-    font-size: 25px;
-    margin-top: 30px;
+    font-size: 20px;
+    margin-top: 25px;
+}
+.cooperationSection img {
+    width: 10%;
 }
 .contactsSection {
     margin-top:200px;
@@ -522,13 +519,6 @@ header  .headerContacts-number span {
 .contactsContainer .rightContainer .buttons {
     width: 400px;
     height: 60px;
-}
-.gallerySection {
-    margin-top: 90px;
-    flex-wrap: wrap;
-}
-.gallerySection img {
-    width: 25%;
 }
 .blogSection {
     margin-top: 100px;
