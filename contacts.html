@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/mainStyle.css">
+    <link rel="stylesheet" href="./styles/media.css">
+    <link rel="stylesheet" href="./styles/burgermenustyle.css">
+    <link rel="stylesheet" href="./styles/modalWindowStyle.css">
+    <script src="./scripts/script.js" defer></script>
+    <title>Контакты</title>
+</head>
+<body>
+    <div id="menu">
+        <div id="menu-bar" onclick="menuOnClick()">
+          <div id="bar1" class="bar"></div>
+          <div id="bar2" class="bar"></div>
+          <div id="bar3" class="bar"></div>
+        </div>
+        <nav class="nav" id="nav">
+          <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#servicesSectionId">Услуги</a></li>
+            <li><a href="#">Вакансии</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav> 
+    </div>
+    <div class="menu-bg" id="menu-bg"></div>
+    <header id="headerId">
+        <div class="mainWrapper">
+            <div class="headerLogo">
+                <img src="./img/logo.png" alt="logo">
+                <h1>Разнорабочие в Екатеринбурге</h1>
+            </div>
+            <nav class="headerNavBar">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#servicesSectionId">Услуги</a></li>
+                <li><a href="#">Вакансии</a></li>
+                <li><a href="#" class="selected">Контакты</a></li>
+            </nav>
+            <div class="headerContacts">
+                <div class="headerContacts-number">
+                    <span>+7 (925) 100-03-08</span>
+                </div>
+                <div class="headerContacts-button">
+                    <button class="buttons" id="firstModalButton">Оставить заявку</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="contactsSection">
+            <div class="mainWrapper">
+                <h3>«СтройПерсонал» - надежный поставщик временной рабочей силы</h3>
+                <div class="contactsContainer">
+                    <div class="leftContainer">
+                        <span class="mailFirst"><span class="mail">info@personalmsk.ru</span> - для заказа, консультаций</span>
+                        <span class="mailSecond"><span class="mail">doc@personalmsk.ru</span> - бухгалтерия</span>
+                        <span class="phoneFirst"><span class="phone"><a href="tel:+74951335915">+7(594)133-59-15</a></span> - приём заказов, консультация</span>
+                        <span class="phoneSecond"><span class="phone"><a href="tel:+79279705402">+7(927)970-54-02</a></span> - для связи в мессенджерах</span>
+                        <div class="socials">
+                            <span class="whatsApp"><a href="https://wa.me/79279705402">whatsApp</a></span>
+                            <span class="whatsApp"><a href="viber://chat?number=+79279705402">Viber</a></span>
+                            <span class="whatsApp"><a href="https://t.me/glazkovv">Telegram</a></span>
+                        </div>
+                        <span class="orgInfo">ООО «Стройперсонал» ОГРН 1191326003110, ИНН 1327034497</span>
+                        <span class="orgAdres">Адрес: Москва, Кусковская ул., 20А, корп. Г, БЦ «Кусково»</span>
+                    </div>
+                    <div class="rightContainer">
+                        <span class="contactsHeader">Уважаемые Клиенты!</span>
+                        <p>
+                            Мы признательны за Ваши отзывы о работе <br>
+                            нашей компании — они помогают улучшать <br>
+                            качество Вашего обслуживания. <br>
+                            <br>
+                            Если у Вас возникло какое-либо недовольство по <br>
+                            качеству нашей работы или во время общения с <br>
+                            нашими сотрудниками, пишите, и мы примем <br>
+                            меры. <br>
+                            <br>
+                            Мы также будем признательны, если Вы отметите <br>
+                            качественную работу наших сотрудников. <br>
+                        </p>
+                        <input type="text" class="name" value="Ваше имя">
+                        <input type="text" class="phoneNumber" value="+7 (999) 999-99-99">
+                        <textarea name="feedback" cols="40" rows="5" class="socialsTextArea">Пожалуйтесь на обслуживание или похвалите нас...</textarea>
+                        <button class="buttons">Отправить письмо директору</button>
+                        <span class="prim">Данные отзывы уходят напрямую директору организации.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="mainWrapper">
+            <div class="footerLogo">
+                <h1><a href="index.html">Разнорабочие в Екатеринбурге - Контакты</a></h1>
+            </div>
+            <div class="orgInfo">
+                <span class="orgName">ООО «Стройперсонал» ОГРН 1191326003110, ИНН 1327034497</span>
+                <span class="politics"><a href="policy.html">политика конфиденциальности</a></span>
+            </div>
+        </div>
+    </footer>
+    <div id="modalWindow" class="modal">
+        <span class="closeButton">&times;</span>
+        <div class="modal-content">
+            <div class="modal-items">
+                <img src="./img/modalWindowImage.webp" alt="modalWindowImage">
+                <span class="modalHeader">Это здорово что вы определились с услугой!</span>
+                <span class="modalText">Вам осталось оставить свои конаткты и наш менеджер свяжется с вами</span>
+                <input type="text" value="Ваше имя" class="inputModalName">
+                <input type="text" value="+7 (999) 999-99-99" class="inputModalPhone">
+                <button class="approveButton buttons">Заказать</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

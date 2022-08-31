@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/mainStyle.css">
+    <link rel="stylesheet" href="./styles/media.css">
+    <link rel="stylesheet" href="./styles/burgermenustyle.css">
+    <link rel="stylesheet" href="./styles/modalWindowStyle.css">
+    <script src="./scripts/script.js" defer></script>
+    <title>Заказать разнорабочих на производство</title>
+</head>
+<body>
+    <div id="menu">
+        <div id="menu-bar" onclick="menuOnClick()">
+          <div id="bar1" class="bar"></div>
+          <div id="bar2" class="bar"></div>
+          <div id="bar3" class="bar"></div>
+        </div>
+        <nav class="nav" id="nav">
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#servicesSectionId">Услуги</a></li>
+            <li><a href="#">Вакансии</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+        </nav> 
+    </div>
+    <div class="menu-bg" id="menu-bg"></div>
+    <header id="headerId">
+        <div class="mainWrapper">
+            <div class="headerLogo">
+                <img src="./img/logo.png" alt="logo">
+                <h1>Разнорабочие в Екатеринбурге</h1>
+            </div>
+            <nav class="headerNavBar">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#servicesSectionId">Услуги</a></li>
+                <li><a href="#">Вакансии</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </nav>
+            <div class="headerContacts">
+                <div class="headerContacts-number">
+                    <span>+7 (925) 100-03-08</span>
+                </div>
+                <div class="headerContacts-button">
+                    <button class="buttons" id="firstModalButton">Оставить заявку</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="mainSection">
+            <div class="mainWrapper">
+                <div class="mainSection-content">
+                    <h2>Заказать разнорабочих на производство в Екатеринбурге</h2>
+                    <h3>
+                        Предоставляем рабочих на завод/производство.
+                        Оплата нал/безнал.
+                    </h3>
+                    <div class="mainSectionButtons" style="justify-content: flex-start;">
+                        <button class="buttons" style="width: 350px;"><a href="#fastCallSectionId">Вызвать подсобных рабочих</a></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="benefitsSection">
+            <div class="mainWrapper">
+                <div class="benefitsList">
+                    <div class="benefitList-item">
+                        <span class="benefitName">От 190 рублей за час работы</span>
+                        <span class="benefitDescription">При заказе от 10 человек на 8 часовую смену</span>
+                    </div>
+                    <div class="benefitList-item">
+                        <span class="benefitName">Весь персонал Граждане России</span>
+                        <span class="benefitDescription">С оригиналами паспортотв на руках</span>
+                    </div>
+                    <div class="benefitList-item">
+                        <span class="benefitName">Наличный / безналичный расчёт</span>
+                        <span class="benefitDescription">Чистая организация, все закрывающие документы</span>
+                    </div>
+                    <div class="benefitList-item">
+                        <span class="benefitName">Присылаем людей с запасом</span>
+                        <span class="benefitDescription">Минимизируем риск «невыхода» рабочих</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="workWithUsSection">
+            <div class="mainWrapper">
+                <h3>Почему с нами удобно работать</h3>
+                <div class="workWithUsContent">
+                    <div class="leftContainer">
+                        <div class="leftContainer-item">
+                            <div class="description">
+                                <span class="name">Постоянные работники</span>
+                                <span class="desc">Не меняем рабочих на объекте без необходимости</span>
+                            </div>
+                            <img src="./img/helmet.svg" alt="helmet">
+                        </div>
+                        <div class="leftContainer-item">
+                            <div class="description">
+                                <span class="name">Наличный / безналичный расчёт</span>
+                                <span class="desc">(ИП / ООО + закрывающие документы по ЭДО))</span>
+                            </div>
+                            <img src="./img/star.svg" alt="star">
+                        </div>
+                        <div class="leftContainer-item">
+                            <div class="description">
+                                <span class="name">Мы на связи 24/7</span>
+                                <span class="desc">Работаем без выходных и праздников в любую смену (день Э ночь)</span>
+                            </div>
+                            <img src="./img/clock.svg" alt="clock">
+                        </div>
+                        <div class="leftContainer-item">
+                            <div class="description">
+                                <span class="name">Скидки и кешбэк</span>
+                                <span class="desc">Скидки на крупных заказах, кешбэк до 10%</span>
+                            </div>
+                            <img src="./img/present.svg" alt="present">
+                        </div>
+                    </div>
+                    <div class="middleContainer">
+                        <img src="./img/builder.png" alt="builder">
+                    </div>
+                    <div class="rightContainer">
+                        <div class="rightContainer-item">
+                            <img src="./img/grafic.svg" alt="grafic">
+                            <div class="description">
+                                <span class="name">Гибкий график работы</span>
+                                <span class="desc">Можем составить индивидуальный график работы на заказ</span>
+                            </div>
+                        </div>
+                        <div class="rightContainer-item">
+                            <img src="./img/message.svg" alt="message">
+                            <div class="description">
+                                <span class="name">Самостоятельность</span>
+                                <span class="desc">Наши рабочие приезжают сами, со своей рабочей одеждой и питанием</span>
+                            </div>
+                        </div>
+                        <div class="rightContainer-item">
+                            <img src="./img/people.svg" alt="people">
+                            <div class="description">
+                                <span class="name">Замена работника</span>
+                                <span class="desc">Произведём замену любого работника, если он не устроил</span>
+                            </div>
+                        </div>
+                        <div class="rightContainer-item">
+                            <img src="./img/wifi.svg" alt="wifi">
+                            <div class="description">
+                                <span class="name">Только граждане РФ</span>
+                                <span class="desc">Отсутствие проблем с УФМС, т.к. наши рабочие граждане России с документами на руках</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="fastCallSectionId" class="fastCallSection">
+            <div class="mainWrapper">
+                <div class="fastCallContent">
+                    <h3>Закажите быстрый звонок</h3>
+                    <span class="info">Наш менеджер свяжется с вами для расчёта стоимости</span>
+                    <div class="leaveContacts">
+                        <input type="text" class="name" value="Ваше имя">
+                        <input type="text" class="phone" value="+7 (999) 999-99-99">
+                        <button class="buttons">Отправить</button>
+                    </div>
+                    <span class="link">Если вы ищете работу разнорабочего <a href="questionary.html">переходите по ссылке</a></span>
+                </div>
+            </div>
+        </section>
+        <section class="cooperationSection">
+            <div class="mainWrapper">
+                <div class="companiesContainer">
+                    <div class="top">
+                        <img src="./img/URLica.webp" alt="URLica">
+                        <h3>Этапы работ для юридических лиц</h3>
+                    </div>
+                    <div class="bottom">
+                        <div class="bottom-item">
+                            <span class="itemNumber">1</span>
+                            <span class="itemName">Консультация</span>
+                            <span class="itemDescription">Вы звоните по телефону либо оставляете заявку на сайте</span>
+                        </div>
+                        <div class="bottom-item">
+                            <span class="itemNumber">2</span>
+                            <span class="itemName">Согласование документов</span>
+                            <span class="itemDescription">Заключаем договор и выставляеи счёт на оплату</span>
+                        </div>                        
+                        <div class="bottom-item">
+                            <span class="itemNumber">3</span>
+                            <span class="itemName">Выход рабочих на объект</span>
+                            <span class="itemDescription">Рабочие в нужном количестве будут у вас на объекте</span>
+                        </div>                        
+                        <div class="bottom-item">
+                            <span class="itemNumber">4</span>
+                            <span class="itemName">Обмен закрывающими документами</span>
+                            <span class="itemDescription">Первоначально обмен по ЭДО, затем отправка оригиналов курьером</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="peopleContainer">
+                    <div class="top">
+                        <img src="./img/FizLica.webp" alt="FizLica">
+                        <h3>Этапы работ для физических лиц</h3>
+                    </div>
+                    <div class="bottom">
+                        <div class="bottom-item">
+                            <span class="itemNumber">1</span>
+                            <span class="itemName">Приём заявки</span>
+                            <span class="itemDescription">Вы звоните по телефону либо оставляете заявку на сайте</span>
+                        </div>
+                        <div class="bottom-item">
+                            <span class="itemNumber">2</span>
+                            <span class="itemName">Выходн рабочих на объект</span>
+                            <span class="itemDescription">Рабочие в нужном количестве будут у вас на объекте</span>
+                        </div>                        
+                        <div class="bottom-item">
+                            <span class="itemNumber">3</span>
+                            <span class="itemName">Выполнение работы</span>
+                            <span class="itemDescription">Рабочие выполняют поставленные задачи</span>
+                        </div>                        
+                        <div class="bottom-item">
+                            <span class="itemNumber">4</span>
+                            <span class="itemName">Расчёт</span>
+                            <span class="itemDescription">Оплата наличными или переводом на карту (Сбербанк, Альфа-Банк, Тиньков, Авангард, ВТБ)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contactsSection">
+            <div class="mainWrapper">
+                <h3>«СтройПерсонал» - надежный поставщик временной рабочей силы</h3>
+                <div class="contactsContainer">
+                    <div class="leftContainer">
+                        <span class="mailFirst"><span class="mail">info@personalmsk.ru</span> - для заказа, консультаций</span>
+                        <span class="mailSecond"><span class="mail">doc@personalmsk.ru</span> - бухгалтерия</span>
+                        <span class="phoneFirst"><span class="phone"><a href="tel:+74951335915">+7(594)133-59-15</a></span> - приём заказов, консультация</span>
+                        <span class="phoneSecond"><span class="phone"><a href="tel:+79279705402">+7(927)970-54-02</a></span> - для связи в мессенджерах</span>
+                        <div class="socials">
+                            <span class="whatsApp"><a href="https://wa.me/79279705402">whatsApp</a></span>
+                            <span class="whatsApp"><a href="viber://chat?number=+79279705402">Viber</a></span>
+                            <span class="whatsApp"><a href="https://t.me/glazkovv">Telegram</a></span>
+                        </div>
+                        <span class="orgInfo">ООО «Стройперсонал» ОГРН 1191326003110, ИНН 1327034497</span>
+                        <span class="orgAdres">Адрес: Москва, Кусковская ул., 20А, корп. Г, БЦ «Кусково»</span>
+                    </div>
+                    <div class="rightContainer">
+                        <span class="contactsHeader">Уважаемые Клиенты!</span>
+                        <p>
+                            Мы признательны за Ваши отзывы о работе <br>
+                            нашей компании — они помогают улучшать <br>
+                            качество Вашего обслуживания. <br>
+                            <br>
+                            Если у Вас возникло какое-либо недовольство по <br>
+                            качеству нашей работы или во время общения с <br>
+                            нашими сотрудниками, пишите, и мы примем <br>
+                            меры. <br>
+                            <br>
+                            Мы также будем признательны, если Вы отметите <br>
+                            качественную работу наших сотрудников. <br>
+                        </p>
+                        <input type="text" class="name" value="Ваше имя">
+                        <input type="text" class="phoneNumber" value="+7 (999) 999-99-99">
+                        <textarea name="feedback" cols="40" rows="5" class="socialsTextArea">Пожалуйтесь на обслуживание или похвалите нас...</textarea>
+                        <button class="buttons">Отправить письмо директору</button>
+                        <span class="prim">Данные отзывы уходят напрямую директору организации.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer style="margin-top: 80px;">
+        <div class="mainWrapper">
+            <div class="footerLogo">
+                <h1><a href="index.html">Услуги разнорабочих в Екатеринбурге</a></h1>
+            </div>
+            <div class="orgInfo">
+                <span class="orgName">ООО «Стройперсонал» ОГРН 1191326003110, ИНН 1327034497</span>
+                <span class="politics"><a href="policy.html">политика конфиденциальности</a></span>
+            </div>
+        </div>
+    </footer>
+    <div id="modalWindow" class="modal">
+        <span class="closeButton">&times;</span>
+        <div class="modal-content">
+            <div class="modal-items">
+                <img src="./img/modalWindowImage.webp" alt="modalWindowImage">
+                <span class="modalHeader">Это здорово что вы определились с услугой!</span>
+                <span class="modalText">Вам осталось оставить свои конаткты и наш менеджер свяжется с вами</span>
+                <input type="text" value="Ваше имя" class="inputModalName">
+                <input type="text" value="+7 (999) 999-99-99" class="inputModalPhone">
+                <button class="approveButton buttons">Заказать</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
