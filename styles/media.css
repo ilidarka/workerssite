@@ -19,6 +19,12 @@
     .fastCallContent .leaveContacts input {
         width: 100%;
     }
+    .mainSection h2 {
+        font-size: 1.5em;
+    }
+    .mainSection h3 {
+        font-size: 1em;
+    }
 }
 @media (max-width: 1150px) {
     footer ul {
@@ -47,9 +53,6 @@
     }
     .workWithUsContent .leftContainer .leftContainer-item {
         flex-direction: row-reverse;
-    }
-    .workWithUsContent .description {
-
     }
     .workWithUsContent .leftContainer .leftContainer-item .description span {
         margin-left: 30px;
@@ -138,6 +141,12 @@
         text-align: start;
     }
 }
+@media (max-width: 650px) {
+    .mainSection .mainSectionButtons {
+        gap: 10px;
+        margin-top: 15px;
+    }
+}
 @media (max-width: 586px) {
     header {
         height: 145px;
@@ -161,6 +170,18 @@
     .requestForm .requestFormContainer span {
         text-align: center;
     }
+    .mainSection h2 {
+        margin-top: 20%;
+        font-size: 1em;
+    }
+    .mainSection h3 {
+        font-size: 1em !important;
+    }
+    .mainSection .mainSectionButtons .buttons {
+        height: 35px;
+        width: 145px;
+        font-size: 0.5em;
+    }
 }
 @media (max-width: 490px) {
     .workWithUsSection .leftContainer, .workWithUsSection .rightContainer {
@@ -168,6 +189,25 @@
     }
     .workWithUsSection h3 {
         text-align: center;
+    }
+}
+@media (max-width: 450px) {
+    header {
+        height: 160px;
+    }
+    .mainSection .mainSection-content h3 {
+        margin-top: 10px;
+    }
+    .mainSection .mainSectionButtons {
+        flex-direction: row;
+    }
+    .footerLogo h1  {
+        text-align: center;
+    }
+}
+@media (max-width: 422px) {
+    .benefitsList .benefitName {
+        width: 205px;
     }
 }
 @media (max-width: 360px) {
