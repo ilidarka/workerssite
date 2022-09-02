@@ -432,7 +432,7 @@ header  .headerContacts-number span {
     font-size: 50px;
 }
 .cooperationSection .bottom {
-    background: url("/img/backgroundLine.png") no-repeat;
+    background: url("../img/backgroundLine.png") no-repeat;
     background-size: 77% 1px;
     background-position-x: 10%;
     background-position-y: 18%;
