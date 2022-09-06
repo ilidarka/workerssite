@@ -243,9 +243,11 @@
                     <h3>Закажите быстрый звонок</h3>
                     <span class="info">Наш менеджер свяжется с вами для расчёта стоимости</span>
                     <div class="leaveContacts">
-                        <input type="text" class="name" value="Ваше имя">
-                        <input type="text" class="phone" value="+7 (999) 999-99-99">
-                        <button class="buttons">Отправить</button>
+                        <form method="POST" action="mail.php" class="leaveContacts">
+                            <input type="text" class="name" value="Ваше имя">
+                            <input type="text" class="phone" value="+7 (999) 999-99-99">
+                            <button class="buttons">Отправить</button>
+                        </form>
                     </div>
                     <span class="link">Если вы ищете работу разнорабочего <a href="questionary.html">переходите по ссылке</a></span>
                 </div>
@@ -329,25 +331,27 @@
                         <span class="orgAdres">Адрес: г.Екатеринбург ул. Академика Шварца 17</span>
                     </div>
                     <div class="rightContainer">
-                        <span class="contactsHeader">Уважаемые Клиенты!</span>
-                        <p>
-                            Мы признательны за Ваши отзывы о работе <br>
-                            нашей компании — они помогают улучшать <br>
-                            качество Вашего обслуживания. <br>
-                            <br>
-                            Если у Вас возникло какое-либо недовольство по <br>
-                            качеству нашей работы или во время общения с <br>
-                            нашими сотрудниками, пишите, и мы примем <br>
-                            меры. <br>
-                            <br>
-                            Мы также будем признательны, если Вы отметите <br>
-                            качественную работу наших сотрудников. <br>
-                        </p>
-                        <input type="text" class="name" value="Ваше имя">
-                        <input type="text" class="phoneNumber" value="+7 (999) 999-99-99">
-                        <textarea name="feedback" cols="40" rows="5" class="socialsTextArea">Пожалуйтесь на обслуживание или похвалите нас...</textarea>
-                        <button class="buttons">Отправить письмо директору</button>
-                        <span class="prim">Данные отзывы уходят напрямую директору организации.</span>
+                        <form method="POST" action="mail.php" class="rightContainer">
+                            <span class="contactsHeader">Уважаемые Клиенты!</span>
+                            <p>
+                                Мы признательны за Ваши отзывы о работе <br>
+                                нашей компании — они помогают улучшать <br>
+                                качество Вашего обслуживания. <br>
+                                <br>
+                                Если у Вас возникло какое-либо недовольство по <br>
+                                качеству нашей работы или во время общения с <br>
+                                нашими сотрудниками, пишите, и мы примем <br>
+                                меры. <br>
+                                <br>
+                                Мы также будем признательны, если Вы отметите <br>
+                                качественную работу наших сотрудников. <br>
+                            </p>
+                            <input type="text" class="name" value="Ваше имя">
+                            <input type="text" class="phoneNumber" value="+7 (999) 999-99-99">
+                            <textarea name="feedback" cols="40" rows="5" class="socialsTextArea">Пожалуйтесь на обслуживание или похвалите нас...</textarea>
+                            <button class="buttons">Отправить письмо директору</button>
+                            <span class="prim">Данные отзывы уходят напрямую директору организации.</span>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -356,7 +360,7 @@
     <footer style="margin-top: 80px;">
         <div class="mainWrapper">
             <div class="footerLogo">
-                <h1><a href="index.html">Услуги копателей в Екатеринбурге</a></h1>
+                <h1><a href="index.html">Услуги грузчиков в Екатеринбурге</a></h1>
             </div>
             <div class="orgInfo">
                 <span class="orgName">ООО «Стройперсонал» ОГРН 1191326003110, ИНН 1327034497</span>
@@ -368,12 +372,14 @@
         <span class="closeButton">&times;</span>
         <div class="modal-content">
             <div class="modal-items">
-                <img src="./img/modalWindowImage.webp" alt="modalWindowImage">
-                <span class="modalHeader">Это здорово что вы определились с услугой!</span>
-                <span class="modalText">Вам осталось оставить свои конаткты и наш менеджер свяжется с вами</span>
-                <input type="text" value="Ваше имя" class="inputModalName">
-                <input type="text" value="+7 (999) 999-99-99" class="inputModalPhone">
-                <button class="approveButton buttons">Заказать</button>
+                <form method="POST" action="mail.php" class="modal-items">
+                    <img src="./img/modalWindowImage.webp" alt="modalWindowImage">
+                    <span class="modalHeader">Это здорово что вы определились с услугой!</span>
+                    <span class="modalText">Вам осталось оставить свои конаткты и наш менеджер свяжется с вами</span>
+                    <input type="text" value="Ваше имя" class="inputModalName" required name="user_name">
+                    <input type="text" value="+7 (999) 999-99-99" class="inputModalPhone" required name="user_phone">
+                    <button class="approveButton buttons">Заказать</button>
+                </form>
             </div>
         </div>
     </div>

@@ -59,13 +59,17 @@ firstBtn.onclick = function() {
     modal.style.display = "block";
 };
 
-secondBtn.onclick = function() {
-    modal.style.display = "block";
-};
+if (secondBtn) {
+    secondBtn.onclick = function() {
+        modal.style.display = "block";
+    };
+}
 
-thirdBtn.onclick = function() {
-    modal.style.display = "block";
-};
+if(thirdBtn) {
+    thirdBtn.onclick = function() {
+        modal.style.display = "block";
+    };
+}
 
 for(var i = 0; i < workInfo.length; i++) {
     workInfo[i].onclick = function() {

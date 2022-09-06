@@ -71,25 +71,27 @@
                         <span class="orgAdres">Адрес: г.Екатеринбург ул. Академика Шварца 17</span>
                     </div>
                     <div class="rightContainer">
-                        <span class="contactsHeader">Уважаемые Клиенты!</span>
-                        <p>
-                            Мы признательны за Ваши отзывы о работе <br>
-                            нашей компании — они помогают улучшать <br>
-                            качество Вашего обслуживания. <br>
-                            <br>
-                            Если у Вас возникло какое-либо недовольство по <br>
-                            качеству нашей работы или во время общения с <br>
-                            нашими сотрудниками, пишите, и мы примем <br>
-                            меры. <br>
-                            <br>
-                            Мы также будем признательны, если Вы отметите <br>
-                            качественную работу наших сотрудников. <br>
-                        </p>
-                        <input type="text" class="name" value="Ваше имя">
-                        <input type="text" class="phoneNumber" value="+7 (999) 999-99-99">
-                        <textarea name="feedback" cols="40" rows="5" class="socialsTextArea">Пожалуйтесь на обслуживание или похвалите нас...</textarea>
-                        <button class="buttons">Отправить письмо директору</button>
-                        <span class="prim">Данные отзывы уходят напрямую директору организации.</span>
+                        <form method="POST" action="mail.php" class="rightContainer">
+                            <span class="contactsHeader">Уважаемые Клиенты!</span>
+                            <p>
+                                Мы признательны за Ваши отзывы о работе <br>
+                                нашей компании — они помогают улучшать <br>
+                                качество Вашего обслуживания. <br>
+                                <br>
+                                Если у Вас возникло какое-либо недовольство по <br>
+                                качеству нашей работы или во время общения с <br>
+                                нашими сотрудниками, пишите, и мы примем <br>
+                                меры. <br>
+                                <br>
+                                Мы также будем признательны, если Вы отметите <br>
+                                качественную работу наших сотрудников. <br>
+                            </p>
+                            <input type="text" class="name" value="Ваше имя">
+                            <input type="text" class="phoneNumber" value="+7 (999) 999-99-99">
+                            <textarea name="feedback" cols="40" rows="5" class="socialsTextArea">Пожалуйтесь на обслуживание или похвалите нас...</textarea>
+                            <button class="buttons">Отправить письмо директору</button>
+                            <span class="prim">Данные отзывы уходят напрямую директору организации.</span>
+                        </form>
                     </div>
                 </div>
             </div>
