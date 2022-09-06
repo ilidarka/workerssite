@@ -5,8 +5,11 @@ $mail = new PHPMailer;
 $mail->CharSet = 'utf-8';
 
 $name = $_POST['user_name'];
+$userMail = $_POST['user_mail'];
 $phone = $_POST['user_phone'];
-$text = $_POST['user_text'];
+$age = $_POST['user_age'];
+$salary = $_POST['user_salary'];
+$expirience = $_POST['user_expirience'];
 
 $mail->SMTPDebug = 3;                               // Enable verbose debug output
 
@@ -28,8 +31,8 @@ $mail->addAddress('workerssite@yandex.by');     // Кому будет уход�
 //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 $mail->isHTML(true);                                  // Set email format to HTML
 
-$mail->Subject = 'Заявка с сайта workersekb';
-$mail->Body    = '' .$name . ' оставил заявку, его телефон ' .$phone. '<br>Его сообщение: ' .$text;
+$mail->Subject = 'Анкета с сайта workersekb';
+$mail->Body    = '' .$name . ' оставил анкету, его почта ' .$userMail. '<br>его телефон ' .$phone. '<br>Его возраст ' .$age. '<br>Его зарплата' .$salary. '<br>Его опыт: ' .$expirience;
 $mail->AltBody = '';
 
 if(!$mail->send()) {

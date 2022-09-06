@@ -243,7 +243,7 @@
                     <span class="info">Наш менеджер свяжется с вами для расчёта стоимости</span>
                     <div class="leaveContacts">
                         <form method="POST" action="mail.php" class="leaveContacts">
-                            <input type="text" class="name" value="Ваше имя">
+                            <input type="text" class="name" value="Ваше имя" required name="user_name">
                             <input type="text" class="phone" value="+7 (999) 999-99-99">
                             <button class="buttons">Отправить</button>
                         </form>
@@ -345,9 +345,9 @@
                                 Мы также будем признательны, если Вы отметите <br>
                                 качественную работу наших сотрудников. <br>
                             </p>
-                            <input type="text" class="name" value="Ваше имя">
-                            <input type="text" class="phoneNumber" value="+7 (999) 999-99-99">
-                            <textarea name="feedback" cols="40" rows="5" class="socialsTextArea">Пожалуйтесь на обслуживание или похвалите нас...</textarea>
+                            <input type="text" class="name" value="Ваше имя" required name="user_name">
+                            <input type="text" class="phoneNumber" value="+7 (999) 999-99-99" required name="user_phone">
+                            <textarea name="feedback" cols="40" rows="5" class="socialsTextArea" name="user_text">Пожалуйтесь на обслуживание или похвалите нас...</textarea>
                             <button class="buttons">Отправить письмо директору</button>
                             <span class="prim">Данные отзывы уходят напрямую директору организации.</span>
                         </form>

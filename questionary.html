@@ -18,24 +18,26 @@
     <main>
         <div class="ancketa">
             <div class="mainWrapper">
-                <span class="fio">ФИО</span>
-                <input type="text" class="fioInput" value="Иван Иванов">
-                <span class="mail">Ваша почта</span>
-                <input type="text" class="mailInput" value="example@site.com">
-                <span class="phone">Ваш телефон</span>
-                <input type="text" class="phoneInput" value="+1 123 456 7890">
-                <span class="age">Сколько вам лет?</span>
-                <input type="text" class="ageInput">
-                <span class="sallary">Какая зарплата вас устроит?</span>
-                <textarea name="sallarytext" id="" cols="65" rows="5" class="sallaryTextArea"></textarea>
-                <span class="experience">Ваш опыт работы</span>
-                <textarea name="experiencetext" id="" cols="65" rows="5" class="experienceTextArea"></textarea>
-                <label class="control control-checkbox">
-                    Согласие на обработку персональных данных
-                        <input type="checkbox" checked="checked" />
-                    <div class="control_indicator"></div>
-                </label>
-                <button>Отправить анкету</button>
+                <form method="POST" action="ancketa.php" class="mainWrapper">
+                    <span class="fio">ФИО</span>
+                    <input type="text" class="fioInput" value="Иван Иванов" required name="user_name">
+                    <span class="mail">Ваша почта</span>
+                    <input type="text" class="mailInput" value="example@site.com" required name="user_mail">
+                    <span class="phone">Ваш телефон</span>
+                    <input type="text" class="phoneInput" value="+1 123 456 7890" required name="user_phone">
+                    <span class="age">Сколько вам лет?</span>
+                    <input type="text" class="ageInput" required name="user_age">
+                    <span class="sallary">Какая зарплата вас устроит?</span>
+                    <textarea name="sallarytext" id="" cols="65" rows="5" class="sallaryTextArea" required name="user_salary"></textarea>
+                    <span class="experience">Ваш опыт работы</span>
+                    <textarea name="experiencetext" id="" cols="65" rows="5" class="experienceTextArea" required name="user_expirience"></textarea>
+                    <label class="control control-checkbox">
+                        Согласие на обработку персональных данных
+                            <input type="checkbox" checked="checked" required/>
+                        <div class="control_indicator"></div>
+                    </label>
+                    <button>Отправить анкету</button>
+                </form>
             </div>
         </div>
     </main>

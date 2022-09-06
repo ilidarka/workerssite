@@ -42,7 +42,6 @@ h2 {
     justify-content: center;    
 }
 .ancketa .mainWrapper {
-    width: 60%;
     align-items: flex-start;
 }
 span, input {
@@ -53,9 +52,11 @@ input {
     padding: 10px 20px;
     font-size: 20px;
     color: #8c8c8c;
+    border: 1px solid #8c8c8c;
 }
 textarea {
     width: 100%;
+    border: 1px solid #8c8c8c;
 }
 button {
     background-color: #000;

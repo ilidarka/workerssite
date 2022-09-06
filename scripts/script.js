@@ -59,7 +59,7 @@ firstBtn.onclick = function() {
     modal.style.display = "block";
 };
 
-if (secondBtn) {
+if(secondBtn) {
     secondBtn.onclick = function() {
         modal.style.display = "block";
     };
