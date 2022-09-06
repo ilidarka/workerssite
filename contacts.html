@@ -110,12 +110,14 @@
         <span class="closeButton">&times;</span>
         <div class="modal-content">
             <div class="modal-items">
-                <img src="./img/modalWindowImage.webp" alt="modalWindowImage">
-                <span class="modalHeader">Это здорово что вы определились с услугой!</span>
-                <span class="modalText">Вам осталось оставить свои конаткты и наш менеджер свяжется с вами</span>
-                <input type="text" value="Ваше имя" class="inputModalName">
-                <input type="text" value="+7 (999) 999-99-99" class="inputModalPhone">
-                <button class="approveButton buttons">Заказать</button>
+                <form method="POST" action="mail.php" class="modal-items">
+                    <img src="./img/modalWindowImage.webp" alt="modalWindowImage">
+                    <span class="modalHeader">Это здорово что вы определились с услугой!</span>
+                    <span class="modalText">Вам осталось оставить свои конаткты и наш менеджер свяжется с вами</span>
+                    <input type="text" value="Ваше имя" class="inputModalName">
+                    <input type="text" value="+7 (999) 999-99-99" class="inputModalPhone">
+                    <button class="approveButton buttons">Заказать</button>
+                </form>
             </div>
         </div>
     </div>
